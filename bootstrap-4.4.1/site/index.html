@@ -9,28 +9,10 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
+
   <!-- FontAwesome CSS -->
+  <script src="https://kit.fontawesome.com/8a2a705dfa.js" crossorigin="anonymous"></script>
 
-
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-  </style>
   <!-- Custom styles for this template -->
   <link href="dashboard.css" rel="stylesheet">
 </head>
@@ -46,84 +28,168 @@
   </nav>
 
   <div class="container-fluid">
-    <main role="main" class="px-4 my-2">
+    <main role="main" class="px-4 my-2 bg-light">
+      <!-- TOP DETAILS-->
       <div class="card-deck">
-      <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-title">Total Cases</h6>
-        <h3>167,178</h3>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="small text-white stretched-link">View Details</a>
-      </div>
-    </div>
-    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-title">Total Deaths</h6>
-        <h3>24,376</h3>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="small text-white stretched-link">View Details</a>
-      </div>
-    </div>
-    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-      <div class="card-body">
-        <h6 class="card-title">Total Recoveries</h6>
-        <h3>49,476</h3>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="small text-white stretched-link">View Details</a>
-      </div>
-    </div>
-  </div>
-      <div class="row">
-
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <!-- start column 1-->
-          <div class="row my-2">
-            <div class="card">
-              <div class="card-header">
-                Current Data Summary
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">France</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
+        <div class="card text-white bg-primary mb-3">
+          <div class="card-body">
+            <h6 class="card-title">Total Cases</h6>
+            <h3>167,178</h3>
           </div>
-          <div class="row">
-            <div class="card">
-              <div class="card-header">
-                Mitigations
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">France</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
+          <div class="card-footer">
+            <a href="#" class="small text-white stretched-link">View Details</a>
           </div>
         </div>
-        <div class="col-md-7 my-2">
-          <!-- start column 2-->
+        <div class="card text-white bg-danger mb-3">
+          <div class="card-body">
+            <h6 class="card-title">Total Deaths</h6>
+            <h3>24,376</h3>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="small text-white stretched-link">View Details</a>
+          </div>
+        </div>
+        <div class="card text-white bg-success mb-3">
+          <div class="card-body">
+            <h6 class="card-title">Total Recoveries</h6>
+            <h3>49,476</h3>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="small text-white stretched-link">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5">
           <div class="row">
             <div class="card w-100">
               <div class="card-header">
-                Projected Outcome
+                <i class="far fa-chart-bar mr-2"></i>Current Data Summary
               </div>
               <div class="card-body">
+                <h5 class="card-title">France</h5>
+                <h6>Cases</h6>
+                <table class="table table-bordered table-sm">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Total Cases</th>
+                      <th scope="col">New Cases</th>
+                      <th scope="col">Active Cases</th>
+                      <th scope="col">Serious, Critical</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>123,456</th>
+                      <td>123,456</td>
+                      <td>123,456</td>
+                      <td>123,456</td>
+                    </tr>
+                  </tbody>
+                </table>
 
-                <img class="img-fluid" src="https://media.npr.org/assets/img/2020/03/11/covid-countries-growth-promo_wide-ea33a5cc976fc78e36f901036ef32b90a395a016.png?s=1400">
+                <h6>Deaths</h6>
+                <table class="table table-bordered table-sm">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Total Deaths</th>
+                      <th scope="col">New Deaths</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>123,456</td>
+                      <td>123,456</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h6>Recovered</h6>
+                <table class="table table-bordered table-sm">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Total Recovered</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>123,456</th>
+                    </tr>
+                  </tbody>
+                </table>
+
+
               </div>
             </div>
           </div>
+        <div class="row">
+          <div class="card w-100">
+            <div class="card-header d-flex justify-content-start">
+              <i class="fas fa-file-medical-alt mr-2"></i> Mitigations
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <h6>Movement Restrictions</h6>
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+              </p>
+              <p class="card-text">
+                <h6>Public Health Measures</h6>
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+              </p>
+              <p class="card-text">
+                <h6>Social Distancing</h6>
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+              </p>
+              <p class="card-text">
+                <h6 class="card-title">Lockdown</h6>
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+              </p>
+            </div>
+          </div>
         </div>
-      </div><!-- end col -->
-  </div> <!-- end row -->
-  </main>
+      </div>
+        <div class="col-md-7">
+          <div class="card w-100">
+            <div class="card-header">
+              <i class="fas fa-chart-line mr-2"></i> Projected Outcome
+            </div>
+            <div class="card-body">
+              <img class="img-fluid"
+                src="https://media.npr.org/assets/img/2020/03/11/covid-countries-growth-promo_wide-ea33a5cc976fc78e36f901036ef32b90a395a016.png?s=1400">
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+  <div class="row d-lg-block">
+    <div class="col-lg-5 float-left">
+
+      <div class="col-lg-7 float-right order-1">
+
+      </div>
+    </div>
+
+    <div class="col-md-5 float-left order-0">
+
+    </div>
+
+    </main>
   </div>
   </div>
   <!-- Optional JavaScript -->
