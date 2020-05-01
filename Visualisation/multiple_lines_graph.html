@@ -7,7 +7,7 @@
 
 <!-- Create a div where the graph will take place -->
 <div id="viz"></div>
-
+<div id='tooltip' style='position:absolute;background-color:lightgray;padding:5px'></div>
 
 <script>
 
@@ -25,9 +25,15 @@ var svg = d3.select("#viz")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
+const tooltips = d3.select('#tooltip');
+const tooltipLine = svg.append('line');
+const x = d3.scaleLinear().domain([1960, 2010]).range([0, width]);   
+let states, TooltipBox;
+
 //Read the data
 d3.csv("../data/Test/hospital_capacity_test.csv", function(data) {
 
+  states = data;
   // group the data: I want to draw one line per group
   var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
     .key(function(d) { return d.country;})
@@ -40,7 +46,7 @@ d3.csv("../data/Test/hospital_capacity_test.csv", function(data) {
   svg.append("g")
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x).ticks(5));
-
+  svg.append('text').html('Hospitals Capacity').attr('x', 200);
   // Add Y axis
   var y = d3.scaleLinear()
     .domain([0, d3.max(data, function(d) { return +d.value; })])
@@ -53,6 +59,7 @@ d3.csv("../data/Test/hospital_capacity_test.csv", function(data) {
   var color = d3.scaleOrdinal()
     .domain(res)
     .range(['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#ffff33','#a65628','#f781bf','#999999'])
+
 
   // Draw the line
   svg.selectAll(".line")
@@ -68,7 +75,44 @@ d3.csv("../data/Test/hospital_capacity_test.csv", function(data) {
             .y(function(d) { return y(+d.value); })
             (d.values)
         })
+  // Tooltips
+  TooltipBox = svg.append('rect')
+    .attr('width', width)
+    .attr('height', height)
+    .attr('opacity', 0)
+    .on('mousemove', drawTooltip)
+    .on('mouseout', removeTooltip)
 
 })
+
+function removeTooltip() {
+  if(tooltips) tooltips.style('display', 'none');
+  if(tooltipLine) tooltipLine.attr('stroke', 'none');
+}
+function drawTooltip() {
+   const year = Math.floor((x.invert(d3.mouse(TooltipBox.node())[0]) + 5) / 10) * 10;
+  
+  states.sort((a, b) => {
+    // return b.history.country(h => h.year == year).population - a.history.find(h => h.year == year).population;
+    // retnrn b.country;
+    // console.log(b.country)
+  })  
+    
+  tooltipLine.attr('stroke', 'black')
+    .attr('x1', x(year))
+    .attr('x2', x(year))
+    .attr('y1', 0)
+    .attr('y2', height);
+  
+  tooltips.html(year)
+    .style('display', 'block')
+    .style('left', d3.event.pageX + 20)
+    .style('top', d3.event.pageY - 20)
+    .selectAll()
+    .data(states).enter()
+    .append('div')
+    .style('color', d => d.color)
+    .html(d => d.country + ' ' + d.value);
+}
 
 </script>
