@@ -29,106 +29,93 @@
 
   <div class="container-fluid">
     <main role="main" class="px-4 my-2 bg-light">
-      <!-- TOP DETAILS-->
-      <div class="card-deck">
-        <div class="card text-white bg-primary mb-3">
-          <div class="card-body">
-            <h6 class="card-title">Total Cases</h6>
-            <h3>167,178</h3>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="small text-white stretched-link">View Details</a>
+
+      <!-- TOP ROW -->
+      <div class="row mb-3">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">
+              <i class="far fa-chart-bar mr-2"></i>Current Data Summary: <strong>France</strong>
+            </div>
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Overview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Total</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Deaths</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Recovered</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hospital Beds</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body pb-0">
+              <table class="table table-bordered table-sm">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Total Cases</th>
+                    <th scope="col">New Cases</th>
+                    <th scope="col">Active Cases</th>
+                    <th scope="col">Serious, Critical</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>123,456</th>
+                    <td>123,456</td>
+                    <td>123,456</td>
+                    <td>123,456</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
-        <div class="card text-white bg-danger mb-3">
-          <div class="card-body">
-            <h6 class="card-title">Total Deaths</h6>
-            <h3>24,376</h3>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="card text-white bg-primary mb-3 w-100">
+              <div class="card-body p-2 d-flex justify-content-between">
+                <h6 class="card-title mb-0">Total Cases Worldwide: 167,178</h6>
+                <small><a href="#" class="text-white">View Details ></a></small>
+              </div>
+            </div>
           </div>
-          <div class="card-footer">
-            <a href="#" class="small text-white stretched-link">View Details</a>
-          </div>
-        </div>
-        <div class="card text-white bg-success mb-3">
-          <div class="card-body">
-            <h6 class="card-title">Total Recoveries</h6>
-            <h3>49,476</h3>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="small text-white stretched-link">View Details</a>
+          <div class="row">
+            <div class="col">
+              <div class="card text-white bg-danger mb-3">
+                <div class="card-body p-2 d-flex justify-content-between">
+                  <h6 class="card-title mb-0">Total Deaths Worldwide: 167,178</h6>
+                  <small><a href="#" class="text-white">View Details ></a></small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white bg-danger mb-3">
+                <div class="card-body p-2 d-flex justify-content-between">
+                  <h6 class="card-title mb-0">Total Deaths Worldwide: 167,178</h6>
+                  <small><a href="#" class="text-white">View Details ></a></small>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- SECOND ROW -->
       <div class="row">
-        <div class="col-md-5">
-          <div class="row">
-            <div class="card w-100">
-              <div class="card-header">
-                <i class="far fa-chart-bar mr-2"></i>Current Data Summary
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">France</h5>
-                <h6>Cases</h6>
-                <table class="table table-bordered table-sm">
-                  <thead class="thead-light">
-                    <tr>
-                      <th scope="col">Total Cases</th>
-                      <th scope="col">New Cases</th>
-                      <th scope="col">Active Cases</th>
-                      <th scope="col">Serious, Critical</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>123,456</th>
-                      <td>123,456</td>
-                      <td>123,456</td>
-                      <td>123,456</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <h6>Deaths</h6>
-                <table class="table table-bordered table-sm">
-                  <thead class="thead-light">
-                    <tr>
-                      <th scope="col">Total Deaths</th>
-                      <th scope="col">New Deaths</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>123,456</td>
-                      <td>123,456</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <h6>Recovered</h6>
-                <table class="table table-bordered table-sm">
-                  <thead class="thead-light">
-                    <tr>
-                      <th scope="col">Total Recovered</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>123,456</th>
-                    </tr>
-                  </tbody>
-                </table>
-
-
-              </div>
-            </div>
-          </div>
-        <div class="row">
-          <div class="card w-100">
+        <div class="col-md-4">
+          <div class="card">
             <div class="card-header d-flex justify-content-start">
               <i class="fas fa-file-medical-alt mr-2"></i> Mitigations
             </div>
-            <div class="card-body">
+            <div class="card-body pt-2">
               <p class="card-text">
                 <h6>Movement Restrictions</h6>
                 <input class="btn btn-outline-secondary" type="button" value="Example">
@@ -160,9 +147,8 @@
             </div>
           </div>
         </div>
-      </div>
-        <div class="col-md-7">
-          <div class="card w-100">
+        <div class="col-md-8">
+          <div class="card">
             <div class="card-header">
               <i class="fas fa-chart-line mr-2"></i> Projected Outcome
             </div>
@@ -172,26 +158,13 @@
             </div>
           </div>
         </div>
+        <div>
+        </div>
       </div>
-  </div>
-
-
-
-  <div class="row d-lg-block">
-    <div class="col-lg-5 float-left">
-
-      <div class="col-lg-7 float-right order-1">
-
-      </div>
-    </div>
-
-    <div class="col-md-5 float-left order-0">
-
-    </div>
 
     </main>
-  </div>
-  </div>
+</div>
+    </body>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
