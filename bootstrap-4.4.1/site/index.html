@@ -1,89 +1,142 @@
----
-layout: home
----
+<!doctype html>
+<html lang="en">
 
-<main class="bd-masthead" id="content" role="main">
-  <div class="container">
-    <div class="row">
-      <div class="col-6 mx-auto col-md-6 order-md-2">
-        {% include icons/bootstrap-stack.svg width="512" height="430" class="img-fluid mb-3 mb-md-0" %}
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!-- FontAwesome CSS -->
+
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark static-top bg-dark flex-md-nowrap p-1 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Pandemic Policy Advisor</a>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <main role="main" class="px-4 my-2">
+      <div class="card-deck">
+      <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+      <div class="card-body">
+        <h6 class="card-title">Total Cases</h6>
+        <h3>167,178</h3>
       </div>
-      <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
-        <h1 class="mb-3 bd-text-purple-bright">Bootstrap</h1>
-        <p class="lead">
-          Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.
-        </p>
-        <p class="lead mb-4">
-          Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
-        </p>
-        <div class="row mx-n2">
-          <div class="col-md px-2">
-            <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/" class="btn btn-lg btn-bd-primary w-100 mb-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Get started</a>
-          </div>
-          <div class="col-md px-2">
-            <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/" class="btn btn-lg btn-outline-secondary w-100 mb-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">Download</a>
-          </div>
-        </div>
-        <p class="text-muted mb-0">
-          Currently v{{ site.current_version }}
-        </p>
+      <div class="card-footer">
+        <a href="#" class="small text-white stretched-link">View Details</a>
       </div>
     </div>
-    {% include ads.html %}
+    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+      <div class="card-body">
+        <h6 class="card-title">Total Deaths</h6>
+        <h3>24,376</h3>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="small text-white stretched-link">View Details</a>
+      </div>
+    </div>
+    <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+      <div class="card-body">
+        <h6 class="card-title">Total Recoveries</h6>
+        <h3>49,476</h3>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="small text-white stretched-link">View Details</a>
+      </div>
+    </div>
   </div>
-</main>
+      <div class="row">
 
-<div class="masthead-followup row m-0 border border-white">
-  <div class="col-md-4 p-3 p-md-5 bg-light border border-white">
-    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-    {% include icons/import.svg width="32" height="32" class="text-primary mb-2" %}
-    <h3>Installation</h3>
-    <p>Include Bootstrap’s source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don’t include documentation, but do include our build system and readme.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <!-- start column 1-->
+          <div class="row my-2">
+            <div class="card">
+              <div class="card-header">
+                Current Data Summary
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">France</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card">
+              <div class="card-header">
+                Mitigations
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">France</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 my-2">
+          <!-- start column 2-->
+          <div class="row">
+            <div class="card w-100">
+              <div class="card-header">
+                Projected Outcome
+              </div>
+              <div class="card-body">
 
-{% highlight sh %}
-npm install bootstrap
-{% endhighlight %}
-
-{% highlight sh %}
-gem install bootstrap -v {{ site.current_ruby_version }}
-{% endhighlight %}
-
-    <hr class="half-rule">
-    <a class="btn btn-outline-primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/">Read installation docs</a>
+                <img class="img-fluid" src="https://media.npr.org/assets/img/2020/03/11/covid-countries-growth-promo_wide-ea33a5cc976fc78e36f901036ef32b90a395a016.png?s=1400">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end col -->
+  </div> <!-- end row -->
+  </main>
   </div>
-
-  <div class="col-md-4 p-3 p-md-5 bg-light border border-white">
-    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-    {% include icons/download.svg width="32" height="32" class="text-primary mb-2" %}
-    <h3>BootstrapCDN</h3>
-    <p>When you only need to include Bootstrap’s compiled CSS or JS, you can use <a href="https://www.bootstrapcdn.com/">BootstrapCDN</a>.</p>
-
-<h5>CSS only</h5>
-{% highlight html %}
-<link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
-{% endhighlight %}
-
-<h5>JS, Popper.js, and jQuery</h5>
-{% highlight html %}
-<script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
-<script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
-<script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
-{% endhighlight %}
-    <hr class="half-rule">
-    <a class="btn btn-outline-primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/">Explore the docs</a>
   </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
 
-  <div class="col-md-4 p-3 p-md-5 bg-light border border-white">
-    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-    {% include icons/lightning.svg width="32" height="32" class="text-primary mb-2" %}
-    <h3>Official Themes</h3>
-    <p>
-      Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components and plugins, docs, and build tools.
-    </p>
-    <img class="img-fluid mt-3 mx-auto" srcset="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/img/bootstrap-themes.png,
-                                                {{ site.baseurl }}/docs/{{ site.docs_version }}/assets/img/bootstrap-themes@2x.png 2x"
-                                        src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/img/bootstrap-themes.png" alt="Bootstrap Themes" width="500" height="200">
-    <hr class="half-rule">
-    <a href="{{ site.themes }}/" class="btn btn-outline-primary">Browse themes</a>
-  </div>
-</div>
+</html>
