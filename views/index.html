@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- FontAwesome CSS -->
+  <script src="https://kit.fontawesome.com/8a2a705dfa.js" crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="dashboard.css" rel="stylesheet">
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <!-- D3 Colour Schema -->
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark static-top bg-dark flex-md-nowrap p-1 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Pandemic Policy Advisor</a>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container-fluid">
+    <main role="main" class="px-4 my-2 bg-light">
+
+      <!-- TOP ROW -->
+      <div class="row mb-3">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">
+              <i class="far fa-chart-bar mr-2"></i>Current Data Summary: <strong>France</strong>
+            </div>
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Overview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Total</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Deaths</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Recovered</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hospital Beds</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body pb-0">
+              <table class="table table-bordered table-sm">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Total Cases</th>
+                    <th scope="col">New Cases</th>
+                    <th scope="col">Active Cases</th>
+                    <th scope="col">Serious, Critical</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>123,456</th>
+                    <td>123,456</td>
+                    <td>123,456</td>
+                    <td>123,456</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="card text-white bg-primary mb-3 w-100">
+              <div class="card-body p-2 d-flex justify-content-between">
+                <h6 class="card-title mb-0">Total Cases Worldwide: 167,178</h6>
+                <small><a href="#" class="text-white">View Details ></a></small>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="card text-white bg-danger mb-3">
+                <div class="card-body p-2 d-flex justify-content-between">
+                  <h6 class="card-title mb-0">Total Deaths Worldwide: 167,178</h6>
+                  <small><a href="#" class="text-white">View Details ></a></small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white bg-danger mb-3">
+                <div class="card-body p-2 d-flex justify-content-between">
+                  <h6 class="card-title mb-0">Total Deaths Worldwide: 167,178</h6>
+                  <small><a href="#" class="text-white">View Details ></a></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECOND ROW -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header d-flex justify-content-start">
+              <i class="fas fa-file-medical-alt mr-2"></i> Mitigations
+            </div>
+            <div class="card-body pt-2">
+              <p class="card-text">
+                <h6>Movement Restrictions</h6>
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+              </p>
+              <p class="card-text">
+                <h6>Public Health Measures</h6>
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+              </p>
+              <p class="card-text">
+                <h6>Social Distancing</h6>
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+              </p>
+              <p class="card-text">
+                <h6 class="card-title">Lockdown</h6>
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input class="btn btn-outline-secondary" type="button" value="Example">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-chart-line mr-2"></i> Projected Outcome
+            </div>
+            <!-- Initialize a select button -->
+            <select id="selectButton"></select>
+            <!-- s -->
+            <div class="card-body">
+            <div id="dataviz"></div>
+<!--               <img class="img-fluid"
+                src="https://media.npr.org/assets/img/2020/03/11/covid-countries-growth-promo_wide-ea33a5cc976fc78e36f901036ef32b90a395a016.png?s=1400"> -->
+                <script>
+
+                    // set the dimensions and margins of the graph
+                    var margin = {top: 10, right: 100, bottom: 30, left: 30},
+                        width = 700 - margin.left - margin.right,
+                        height = 400 - margin.top - margin.bottom;
+
+                    // append the svg object to the body of the page
+                    var svg = d3.select("#dataviz")
+                      .append("svg")
+                        .attr("width", width + margin.left + margin.right)
+                        .attr("height", height + margin.top + margin.bottom)
+                      .append("g")
+                        .attr("transform",
+                              "translate(" + margin.left + "," + margin.top + ")");
+
+                    //Read the data
+                    d3.csv("dummy_data_connectedscatter.csv", function(data) {
+
+                        // List of groups (here I have one group per column)
+                        var allGroup = ["valueA", "valueB", "valueC"]
+
+                        // add the options to the button
+                        d3.select("#selectButton")
+                          .selectAll('myOptions')
+                          .data(allGroup)
+                          .enter()
+                          .append('option')
+                          .text(function (d) { return d; }) // text showed in the menu
+                          .attr("value", function (d) { return d; }) // corresponding value returned by the button
+
+                        // A color scale: one color for each group
+                        var myColor = d3.scaleOrdinal()
+                          .domain(allGroup)
+                          .range(d3.schemeSet2);
+
+                        // Add X axis --> it is a date format
+                        var x = d3.scaleLinear()
+                          .domain([0,10])
+                          .range([ 0, width ]);
+                        svg.append("g")
+                          .attr("transform", "translate(0," + height + ")")
+                          .call(d3.axisBottom(x));
+
+                        // Add Y axis
+                        var y = d3.scaleLinear()
+                          .domain( [0,20])
+                          .range([ height, 0 ]);
+                        svg.append("g")
+                          .call(d3.axisLeft(y));
+
+                        // Initialize line with group a
+                        var line = svg
+                          .append('g')
+                          .append("path")
+                            .datum(data)
+                            .attr("d", d3.line()
+                              .x(function(d) { return x(+d.time) })
+                              .y(function(d) { return y(+d.valueA) })
+                            )
+                            .attr("stroke", function(d){ return myColor("valueA") })
+                            .style("stroke-width", 4)
+                            .style("fill", "none")
+
+                        // A function that update the chart
+                        function update(selectedGroup) {
+
+                          // Create new data with the selection?
+                          var dataFilter = data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+
+                          // Give these new data to update line
+                          line
+                              .datum(dataFilter)
+                              .transition()
+                              .duration(1000)
+                              .attr("d", d3.line()
+                                .x(function(d) { return x(+d.time) })
+                                .y(function(d) { return y(+d.value) })
+                              )
+                              .attr("stroke", function(d){ return myColor(selectedGroup) })
+                        }
+
+                        // When the button is changed, run the updateChart function
+                        d3.select("#selectButton").on("change", function(d) {
+                            // recover the option that has been chosen
+                            var selectedOption = d3.select(this).property("value")
+                            // run the updateChart function with this selected option
+                            update(selectedOption)
+                        })
+
+                    })
+
+
+                    </script>
+            </div>
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+
+    </main>
+</div>
+    </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

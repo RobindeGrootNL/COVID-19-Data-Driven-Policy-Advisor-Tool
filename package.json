@@ -1,0 +1,22 @@
+{
+  "name": "covid-19-data-driven-policy-advisor-tool",
+  "version": "0.0.1",
+  "description": "Covid-19 Policy Dashboard",
+  "main": "app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beatrice-trinidad/COVID-19-Data-Driven-Policy-Advisor-Tool.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beatrice-trinidad/COVID-19-Data-Driven-Policy-Advisor-Tool/issues"
+  },
+  "homepage": "https://github.com/beatrice-trinidad/COVID-19-Data-Driven-Policy-Advisor-Tool#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
