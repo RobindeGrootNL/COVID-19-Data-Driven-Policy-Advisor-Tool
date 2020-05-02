@@ -49,7 +49,7 @@
             <div class="card-header text-uppercase font-weight-bold text-info">
               <i class="far fa-chart-bar mr-2 "></i>Current Data Summary: <strong>France</strong>
             </div>
-            <div class="card-header">
+            <div class="card-header bg-white">
               <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Overview</a>
@@ -72,22 +72,22 @@
               <table class="table table-borderless table-sm mb-0">
                 <thead class="thead">
                   <tr>
-                    <td scope="col" class="text-primary">Total Cases</td>
-                    <td scope="col" class="text-warning">New Cases</td>
-                    <td scope="col" class="text-danger">Total Deaths</td>
-                    <td scope="col" class="text-success">Total Recoveries</td>
+                    <td scope="col" class="text-primary font-weight-light">Total Cases</td>
+                    <td scope="col" class="text-warning font-weight-light">New Cases</td>
+                    <td scope="col" class="text-danger font-weight-light">Total Deaths</td>
+                    <td scope="col" class="text-success font-weight-light">Total Recoveries</td>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><strong><span class="lead">123,456</strong></td>
+                    <td><strong><span class="lead">123,456</span></strong></td>
                     <td><span class="lead font-weight-bold">123,456</span><span class="ml-2 small"></fa><span
                           class="pl-1 text-danger">+54</span><span class="pl-1 text-secondary">new cases</span></span>
                       </th>
-                    <td><span class="lead font-weight-bold">123,456</span><span class="ml-2 small"></fa><span
+                    <td><span class="lead count">123,456</span><span class="ml-2 small"></fa><span
                           class="pl-1 text-danger">+5</span><span class="pl-1 text-secondary">new deaths</span></span>
                       </th>
-                    <td><span class="lead font-weight-bold">123,456</span><span class="ml-2 small"></fa><span
+                    <td><span class="lead count">123,456</span><span class="ml-2 small"></fa><span
                           class="pl-1 text-success">+5</span><span class="pl-1 text-secondary">new
                           recoveries</span></span></th>
                   </tr>
@@ -100,7 +100,7 @@
           <div class="row">
             <div class="card text-white bg-primary mb-3 w-100 shadow-sm">
               <div class="card-body p-2 d-flex justify-content-between">
-                <h5 class="card-title mb-0">Total Cases Worldwide: 167,178</h5>
+                <h5 class="card-title mb-0 font-weight-light">Total Cases Worldwide: 167,178</h5>
               </div>
               <div class="card-footer py-1 px-2">
                 <small><a href="#" class="text-white p-0">View Details ></a></small>
@@ -111,7 +111,7 @@
             <div class="card-deck">
               <div class="card text-white bg-danger mb-3 shadow-sm">
                 <div class="card-body p-2 d-flex justify-content-between">
-                  <h6 class="card-title mb-0">Total Deaths Worldwide:</h6><br>
+                  <h6 class="card-title mb-0 font-weight-light">Total Deaths Worldwide:</h6><br>
                   <h5 class="card-title mb-0 justify-content-end">123,456</h5>
                 </div>
                 <div class="card-footer py-1 px-2">
@@ -120,7 +120,7 @@
               </div>
               <div class="card text-white bg-success mb-3 shadow-sm">
                 <div class="card-body p-2 d-flex justify-content-between">
-                  <h6 class="card-title mb-0">Total Recoveries Worldwide:</h6><br>
+                  <h6 class="card-title mb-0 font-weight-light">Total Recoveries Worldwide:</h6><br>
                   <h5 class="card-title mb-0 justify-content-end">167,178</h5>
                 </div>
                 <div class="card-footer py-1 px-2">
@@ -135,35 +135,35 @@
 
       <!-- SECOND ROW -->
       <div class="row mb-3">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="card shadow-sm h-100">
             <div class="card-header text-uppercase font-weight-bold text-info">
               <i class="fas fa-file-medical-alt mr-2"></i> Mitigations
             </div>
             <div class="card-body pt-2">
               <p class="card-text">
-                <h6>Movement Restrictions</h6>
+                <h6 class="font-weight-light">Movement Restrictions</h6>
                 <input id="one" class="btn btn-outline-secondary" type="button" value="One">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
               </p>
               <p class="card-text">
-                <h6>Public Health Measures</h6>
+                <h6 class="font-weight-light">Public Health Measures</h6>
                 <input id="two" class="btn btn-outline-secondary" type="button" value="Two">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
               </p>
               <p class="card-text">
-                <h6>Social Distancing</h6>
+                <h6 class="font-weight-light">Social Distancing</h6>
                 <input id="three" class="btn btn-outline-secondary" type="button" value="Three">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
               </p>
               <p class="card-text">
-                <h6 class="card-title">Lockdown</h6>
+                <h6 class="font-weight-light">Lockdown</h6>
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
@@ -172,12 +172,12 @@
             </div>
           </div>
         </div>
-        <div class="col-md-8">
-          <div class="card shadow-sm">
+        <div class="col-md-6">
+          <div class="card shadow-sm h-100">
             <div class="card-header text-uppercase font-weight-bold text-info">
               <i class="fas fa-chart-line mr-2"></i> Projected Outcome
             </div>
-            <div class="card-header">
+            <div class="card-header bg-white">
               <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Overall Country</a>
@@ -197,33 +197,214 @@
           <div>
           </div>
         </div>
-      </div>
-
-        <!-- THIRD ROW -->
-        <div class="row mb-3">
-          <div class="col">
-            <div class="card shadow-sm">
-              <div class="card-header text-uppercase font-weight-bold text-info">
-                <i class="fas fa-map-marker-alt mr-2"></i>Confirmed Cases by Region</strong>
+        <div class="col-md-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-header text-uppercase font-weight-bold text-info">
+              <i class="fas fa-comment-dots mr-2"></i> Suggestions
+            </div>
+            <div class="card-body">
+              <h6 class="font-weight-light">Adoption Rate</h6>
+              <div class="d-flex align-items-center mb-4">
+                <strong><span class="lead">23,94 <span class="text-warning">(Moderate)</span></span></strong>
+                <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top"
+                  title="Adoption rate affects how well people will follow new policies. It is based on country-specific cultural tightness and government efficiency."><i
+                    class="fas fa-info-circle"></i></button>
               </div>
-              <div class="card-body">
+              <h6 class="font-weight-light">Analysis</h6>
+              <p class="mb-4">Due to the <span class="text-warning">moderate</span> social norm adoption rate in your
+                country, advertisement spend is crucial for
+                public adoption. </p>
 
-                  <!-- map div and script -->
-                  <div id="map" style="width: 600px; height: 400px;"></div>
-              </div>
+              <h6 class="font-weight-light">Recommended monthly budget to reach awareness in your community</h6>
+              <div><strong><span class="lead">€ 30000</span></strong></div>
+
+              <button type="button" class="btn btn-outline-primary">Create Campaign</button>
+
+              <script>
+                $(function () {
+                  $('[data-toggle="tooltip"]').tooltip()
+                })
+              </script>
+
             </div>
           </div>
-          <div class="col">
-            <div class="card shadow-sm h-100 ">
-              <div class="card-header text-uppercase font-weight-bold text-info">
-                <i class="fas fa-user mr-2"></i>Age and Gender Distribution</strong>
-              </div>
+
+        </div>
+
+      </div>
+
+      <!-- THIRD ROW -->
+      <div class="row mb-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-header text-uppercase font-weight-bold text-info">
+              <i class="fas fa-map-marker-alt mr-2"></i>Confirmed Cases by Region</strong>
+            </div>
+            <div class="card-body">
+
+              <!-- map div and script -->
+              <div id="map" style="width: 600px; height: 400px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm h-100 ">
+            <div class="card-header text-uppercase font-weight-bold text-info">
+              <i class="fas fa-coins mr-2"></i>Campaign Expenditures</strong>
+            </div>
+            <div class="card-body p-2">
+              <section class="chart-container">
+                <svg width="620" height="420"></svg>
+              </section>
+              <style>
+                .chart-container {
+                  position: relative;
+                }
+
+                svg {
+                  border-radius: .123rem;
+                }
+
+                .bar {
+                  fill: #1888d6;
+                  transition: all 150ms ease;
+                }
+
+                .bar:hover {
+                  fill: #09163d;
+                }
+
+                .axis--x path {
+                  visibility: hidden;
+                }
+
+                svg text {
+                  fill: black;
+                }
+
+                /* tip */
+                .tip {
+                  width: 6rem;
+                  background-color: #eee;
+                  text-align: center;
+                  box-shadow: 0px 2px 10px -2px #aaa;
+                  border: 2px solid #444;
+                  transition: all 160ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                }
+
+                .tip::after {
+                  content: " ";
+                  position: absolute;
+                  bottom: -.5rem;
+                  left: 50%;
+                  margin-left: -.5rem;
+                  border-style: solid;
+                  border-width: .5rem .5rem 0 .5rem;
+                  border-color: #444 transparent transparent transparent;
+                }
+              </style>
+              <script>
+                var static_data = [{
+                  grad_year: 'January 2020',
+                  student_count: 25000
+                }, {
+                  grad_year: 'February 2020',
+                  student_count: 26000
+                }, {
+                  grad_year: 'March 2020',
+                  student_count: 27302
+                }, {
+                  grad_year: 'April 2020',
+                  student_count: 29403
+                }];
+                var tip = d3.select(".chart-container")
+                  .append("div")
+                  .attr("class", "tip")
+                  .style("position", "absolute")
+                  .style("z-index", "10")
+                  .style("visibility", "hidden");
+
+                var svg = d3.select("svg").attr("class", "background-style"),
+                  margin = {
+                    top: 20,
+                    right: 20,
+                    bottom: 42,
+                    left: 40
+                  },
+                  width = +svg.attr("width") - margin.left - margin.right,
+                  height = +svg.attr("height") - margin.top - margin.bottom;
+
+                var x = d3.scaleBand().rangeRound([0, width]).padding(0.05),
+                  y = d3.scaleLinear().rangeRound([height, 0]);
+
+                var g = svg.append("g")
+                  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                d3.json("apiPlaceholderURL", function (error, data) {
+                  //if (error) throw error;
+
+                  data = static_data;
+
+                  x.domain(data.map(function (d) {
+                    return d.grad_year;
+                  }));
+                  y.domain([0, d3.max(data, function (d) {
+                    return d.student_count;
+                  })]);
+
+                  g.append("g")
+                    .attr("class", "axis axis--x")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(d3.axisBottom(x))
+                    .append("text")
+                    .attr("y", 6)
+                    .attr("dy", "2.5em")
+                    .attr("dx", width / 2 - margin.left)
+                    .attr("text-anchor", "start")
+                    .text("Most Recent Months");
+
+                  g.append("g")
+                    .attr("class", "axis axis--y")
+                    .call(d3.axisLeft(y).ticks(10))
+                    .append("text")
+                    .attr("transform", "rotate(-90)")
+                    .attr("y", 6)
+                    .attr("dy", "0.71em")
+                    .attr("text-anchor", "end")
+                    .text("Expenses (€)");
+
+
+                  g.selectAll(".bar")
+                    .data(data)
+                    .enter().append("rect")
+                    .attr("class", "bar")
+                    .attr("x", function (d) {
+                      return x(d.grad_year);
+                    })
+                    .attr("y", function (d) {
+                      return y(d.student_count);
+                    })
+                    .attr("width", x.bandwidth())
+                    .attr("height", function (d) {
+                      return height - y(d.student_count)
+                    })
+                    .on("mouseover", function (d) {
+                      return tip.text(d.student_count).style("visibility", "visible").style("top", y(d
+                        .student_count) - 13 + 'px').style("left", x(d.grad_year) + x.bandwidth() - 12 + 'px')
+                    })
+                    //.on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
+                    .on("mouseout", function () {
+                      return tip.style("visibility", "hidden");
+                    });
+                });
+              </script>
             </div>
           </div>
         </div>
       </div>
+  </div>
 
-    </main>
+  </main>
   </div>
 </body>
 <!-- Optional JavaScript -->
@@ -237,24 +418,28 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
- <script>
-
-// set the dimensions and margins of the graph
-var margin = {top: 10, right: 100, bottom: 30, left: 50},
+<script>
+  // set the dimensions and margins of the graph
+  var margin = {
+      top: 10,
+      right: 100,
+      bottom: 30,
+      left: 50
+    },
     width = 700 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
-// append the svg object to the body of the page
-var svg = d3.select("#dataviz")
-  .append("svg")
+  // append the svg object to the body of the page
+  var svg = d3.select("#dataviz")
+    .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
+      "translate(" + margin.left + "," + margin.top + ")");
 
-//Read the data
-d3.csv("France_cases2.csv", function(data) {
+  //Read the data
+  d3.csv("France_cases2.csv", function (data) {
 
     // List of groups (here I have one group per column)
     var allGroup = ["one", "two", "three"]
@@ -265,8 +450,12 @@ d3.csv("France_cases2.csv", function(data) {
       .data(allGroup)
       .enter()
       .append('option')
-      .text(function (d) { return d; }) // text showed in the menu
-      .attr("value", function (d) { return d; }) // corresponding value returned by the button
+      .text(function (d) {
+        return d;
+      }) // text showed in the menu
+      .attr("value", function (d) {
+        return d;
+      }) // corresponding value returned by the button
 
     // A color scale: one color for each group
     var myColor = d3.scaleOrdinal()
@@ -275,16 +464,16 @@ d3.csv("France_cases2.csv", function(data) {
 
     // Add X axis --> it is a date format
     var x = d3.scaleLinear()
-      .domain([0,100])
-      .range([ 0, width ]);
+      .domain([0, 100])
+      .range([0, width]);
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 
     // Add Y axis
     var y = d3.scaleLinear()
-      .domain( [0,200000])
-      .range([ height, 0 ]);
+      .domain([0, 200000])
+      .range([height, 0]);
     svg.append("g")
       .call(d3.axisLeft(y));
 
@@ -292,31 +481,48 @@ d3.csv("France_cases2.csv", function(data) {
     var line = svg
       .append('g')
       .append("path")
-        .datum(data)
-        .attr("d", d3.line()
-          .x(function(d) { return x(+d.time) })
-          .y(function(d) { return y(+d.one) })
-        )
-        .attr("stroke", function(d){ return myColor("valueA") })
-        .style("stroke-width", 4)
-        .style("fill", "none")
+      .datum(data)
+      .attr("d", d3.line()
+        .x(function (d) {
+          return x(+d.time)
+        })
+        .y(function (d) {
+          return y(+d.one)
+        })
+      )
+      .attr("stroke", function (d) {
+        return myColor("valueA")
+      })
+      .style("stroke-width", 4)
+      .style("fill", "none")
 
     // A function that update the chart
     function update(selectedGroup) {
 
       // Create new data with the selection?
-      var dataFilter = data.map(function(d){return {time: d.time, value:d[selectedGroup]} })
+      var dataFilter = data.map(function (d) {
+        return {
+          time: d.time,
+          value: d[selectedGroup]
+        }
+      })
 
       // Give these new data to update line
       line
-          .datum(dataFilter)
-          .transition()
-          .duration(1000)
-          .attr("d", d3.line()
-            .x(function(d) { return x(+d.time) })
-            .y(function(d) { return y(+d.value) })
-          )
-          .attr("stroke", function(d){ return myColor(selectedGroup) })
+        .datum(dataFilter)
+        .transition()
+        .duration(1000)
+        .attr("d", d3.line()
+          .x(function (d) {
+            return x(+d.time)
+          })
+          .y(function (d) {
+            return y(+d.value)
+          })
+        )
+        .attr("stroke", function (d) {
+          return myColor(selectedGroup)
+        })
     }
 
     // When the button is changed, run the updateChart function
@@ -327,21 +533,19 @@ d3.csv("France_cases2.csv", function(data) {
     //     update(selectedOption)
     // })
 
-    d3.select('#one').on('click', function(d) {
+    d3.select('#one').on('click', function (d) {
       var selectedOption = "one"
       update(selectedOption)
     })
-    d3.select('#two').on('click', function(d) {
+    d3.select('#two').on('click', function (d) {
       var selectedOption = "two"
       update(selectedOption)
     })
-    d3.select('#three').on('click', function(d) {
+    d3.select('#three').on('click', function (d) {
       var selectedOption = "three"
       update(selectedOption)
     })
-})
-
-
+  })
 </script>
 
 </body>
