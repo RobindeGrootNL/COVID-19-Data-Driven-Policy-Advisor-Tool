@@ -1,7 +1,7 @@
 //https://jvectormap.com/maps/countries/france-regions-2016/
 //https://jvectormap.com/tutorials/getting-started/
-
-$(function () {
+$.noConflict();
+    jQuery( document ).ready(function( $ ) {
     //regions of france - 
     //March 25 data https://www.europeandataportal.eu/data/datasets/cas-confirmes-dinfection-au-covid-19-par-region?locale=en
     var caseData = {

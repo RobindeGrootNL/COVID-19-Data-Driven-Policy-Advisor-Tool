@@ -25,9 +25,11 @@
   <script src="map/jquery-3.5.0.js"></script>
   <script src="map/jquery-jvectormap-2.0.5.min.js"></script>
   <script src="map/jquery-jvectormap-fr_regions_2016-mill.js"></script>
+
 </head>
 
 <body>
+
   <nav class="navbar navbar-dark static-top bg-dark flex-md-nowrap p-1 shadow">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Pandemic Policy Advisor</a>
     <ul class="navbar-nav px-3">
@@ -206,11 +208,8 @@
               </div>
               <div class="card-body">
 
-                <body>
                   <!-- map div and script -->
                   <div id="map" style="width: 600px; height: 400px;"></div>
-                  <script src="map/loadMap.js"></script>
-                </body>
               </div>
             </div>
           </div>
@@ -229,9 +228,9 @@
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-</script>
+</script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
 </script>
@@ -344,6 +343,9 @@ d3.csv("France_cases2.csv", function(data) {
 
 
 </script>
+
 </body>
+<script src="map/loadMap.js"></script>
+
 
 </html>
