@@ -141,21 +141,21 @@
             <div class="card-body pt-2">
               <p class="card-text">
                 <h6>Movement Restrictions</h6>
-                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input id="one" class="btn btn-outline-secondary" type="button" value="One">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
               </p>
               <p class="card-text">
                 <h6>Public Health Measures</h6>
-                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input id="two" class="btn btn-outline-secondary" type="button" value="Two">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
               </p>
               <p class="card-text">
                 <h6>Social Distancing</h6>
-                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input id="three" class="btn btn-outline-secondary" type="button" value="Three">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
@@ -187,7 +187,7 @@
             </div>
             <div class="card-body">
               <!-- Initialize a select button -->
-              <select id="selectButton"></select>
+              <!-- <select id="selectButton"></select> -->
               <!-- Data Viz -->
               <div id="dataviz"></div>
             </div>
@@ -321,13 +321,25 @@ d3.csv("France_cases2.csv", function(data) {
     }
 
     // When the button is changed, run the updateChart function
-    d3.select("#selectButton").on("change", function(d) {
-        // recover the option that has been chosen
-        var selectedOption = d3.select(this).property("value")
-        // run the updateChart function with this selected option
-        update(selectedOption)
-    })
+    // d3.select("#selectButton").on("change", function(d) {
+    //     // recover the option that has been chosen
+    //     var selectedOption = d3.select(this).property("value")
+    //     // run the updateChart function with this selected option
+    //     update(selectedOption)
+    // })
 
+    d3.select('#one').on('click', function(d) {
+      var selectedOption = "one"
+      update(selectedOption)
+    })
+    d3.select('#two').on('click', function(d) {
+      var selectedOption = "two"
+      update(selectedOption)
+    })
+    d3.select('#three').on('click', function(d) {
+      var selectedOption = "three"
+      update(selectedOption)
+    })
 })
 
 
