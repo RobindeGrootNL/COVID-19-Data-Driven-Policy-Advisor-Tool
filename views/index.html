@@ -462,7 +462,7 @@
 
     // Add X axis --> it is a date format
     var x = d3.scaleLinear()
-      .domain([0, 100])
+      .domain([50, 250])
       .range([0, width]);
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
@@ -470,7 +470,7 @@
 
     // Add Y axis
     var y = d3.scaleLinear()
-      .domain([0, 200000])
+      .domain([0, 25000000])
       .range([height, 0]);
     svg.append("g")
       .call(d3.axisLeft(y));
