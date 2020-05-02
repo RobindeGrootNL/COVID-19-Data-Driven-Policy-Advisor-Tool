@@ -106,33 +106,31 @@
             </div>
             <div class="card-body pt-2">
               <p class="card-text">
+                <!--     var allGroup = ["OldPeopleInside","SchoolsClosed","WorkAtHome","NoTourism","ClosedRestaurants","ClosedDiscos"]
+ -->
                 <h6 class="font-weight-light">Movement Restrictions</h6>
-                <input id="one" class="btn btn-outline-secondary" type="button" value="One">
-                <input class="btn btn-outline-secondary" type="button" value="Example">
-                <input class="btn btn-outline-secondary" type="button" value="Example">
-                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input id="one" class="btn btn-outline-secondary" type="button" value="Confined elderly">
+                <input id="two" class="btn btn-outline-secondary" type="button" value="Schools Closed">
               </p>
               <p class="card-text">
                 <h6 class="font-weight-light">Public Health Measures</h6>
-                <input id="two" class="btn btn-outline-secondary" type="button" value="Two">
-                <input class="btn btn-outline-secondary" type="button" value="Example">
-                <input class="btn btn-outline-secondary" type="button" value="Example">
-                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input id="three" class="btn btn-outline-secondary" type="button" value="Work at Home">
+                <input id="four" class="btn btn-outline-secondary" type="button" value="No Tourism">
+
               </p>
               <p class="card-text">
                 <h6 class="font-weight-light">Social Distancing</h6>
-                <input id="three" class="btn btn-outline-secondary" type="button" value="Three">
-                <input class="btn btn-outline-secondary" type="button" value="Example">
-                <input class="btn btn-outline-secondary" type="button" value="Example">
-                <input class="btn btn-outline-secondary" type="button" value="Example">
+                <input id="fixe" class="btn btn-outline-secondary" type="button" value="Closed Restaurants">
+                <input id="six" class="btn btn-outline-secondary" type="button" value="Closed Discos">
+
               </p>
-              <p class="card-text">
+<!--               <p class="card-text">
                 <h6 class="font-weight-light">Lockdown</h6>
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
                 <input class="btn btn-outline-secondary" type="button" value="Example">
-              </p>
+               </p> -->
             </div>
           </div>
         </div>
@@ -293,7 +291,7 @@
                     top: 20,
                     right: 20,
                     bottom: 42,
-                    left: 40
+                    left: 140
                   },
                   width = +svg.attr("width") - margin.left - margin.right,
                   height = +svg.attr("height") - margin.top - margin.bottom;
@@ -388,7 +386,7 @@
       top: 10,
       right: 100,
       bottom: 30,
-      left: 50
+      left: 60
     },
     width = 700 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
@@ -403,10 +401,10 @@
       "translate(" + margin.left + "," + margin.top + ")");
 
   //Read the data
-  d3.csv("France_cases2.csv", function (data) {
+  d3.csv("InfestionsGroupsEffectsFixed.csv", function (data) {
 
     // List of groups (here I have one group per column)
-    var allGroup = ["one", "two", "three"]
+    var allGroup = ["one","two","three","four","five","six"]
 
     // add the options to the button
     d3.select("#selectButton")
@@ -428,7 +426,7 @@
 
     // Add X axis --> it is a date format
     var x = d3.scaleLinear()
-      .domain([0, 100])
+      .domain([50, 250])
       .range([0, width]);
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
@@ -436,7 +434,7 @@
 
     // Add Y axis
     var y = d3.scaleLinear()
-      .domain([0, 200000])
+      .domain([0, 25000000])
       .range([height, 0]);
     svg.append("g")
       .call(d3.axisLeft(y));
@@ -507,6 +505,18 @@
     })
     d3.select('#three').on('click', function (d) {
       var selectedOption = "three"
+      update(selectedOption)
+    })
+    d3.select('#four').on('click', function (d) {
+      var selectedOption = "four"
+      update(selectedOption)
+    })
+    d3.select('#five').on('click', function (d) {
+      var selectedOption = "five"
+      update(selectedOption)
+    })
+    d3.select('#six').on('click', function (d) {
+      var selectedOption = "six"
       update(selectedOption)
     })
   })
