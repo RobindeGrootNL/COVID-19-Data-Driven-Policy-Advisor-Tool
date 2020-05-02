@@ -34,7 +34,7 @@
       <div class="row mb-3">
         <div class="col-md-8">
           <div class="card shadow-sm">
-            <div class="card-header text-uppercase font-weight-bold">
+            <div class="card-header text-uppercase font-weight-bold text-info">
               <i class="far fa-chart-bar mr-2 "></i>Current Data Summary: <strong>France</strong>
             </div>
             <div class="card-header">
@@ -69,9 +69,15 @@
                 <tbody>
                   <tr>
                     <td><strong><span class="lead">123,456</strong></td>
-                    <td><span class="lead font-weight-bold">123,456</span><span class="ml-2 small"></fa><span class="pl-1 text-danger">+54</span><span class="pl-1 text-secondary">new cases</span></span></th>
-                    <td><span class="lead font-weight-bold">123,456</span><span class="ml-2 small"></fa><span class="pl-1 text-danger">+5</span><span class="pl-1 text-secondary">new deaths</span></span></th>
-                    <td><span class="lead font-weight-bold">123,456</span><span class="ml-2 small"></fa><span class="pl-1 text-success">+5</span><span class="pl-1 text-secondary">new recoveries</span></span></th>
+                    <td><span class="lead font-weight-bold">123,456</span><span class="ml-2 small"></fa><span
+                          class="pl-1 text-danger">+54</span><span class="pl-1 text-secondary">new cases</span></span>
+                      </th>
+                    <td><span class="lead font-weight-bold">123,456</span><span class="ml-2 small"></fa><span
+                          class="pl-1 text-danger">+5</span><span class="pl-1 text-secondary">new deaths</span></span>
+                      </th>
+                    <td><span class="lead font-weight-bold">123,456</span><span class="ml-2 small"></fa><span
+                          class="pl-1 text-success">+5</span><span class="pl-1 text-secondary">new
+                          recoveries</span></span></th>
                   </tr>
                 </tbody>
               </table>
@@ -110,16 +116,16 @@
                 </div>
               </div>
             </div>
-            </div>
-     
+          </div>
+
         </div>
       </div>
 
       <!-- SECOND ROW -->
       <div class="row mb-3">
         <div class="col-md-4">
-          <div class="card shadow-sm">
-            <div class="card-header text-uppercase font-weight-bold">
+          <div class="card shadow-sm h-100">
+            <div class="card-header text-uppercase font-weight-bold text-info">
               <i class="fas fa-file-medical-alt mr-2"></i> Mitigations
             </div>
             <div class="card-body pt-2">
@@ -156,7 +162,7 @@
         </div>
         <div class="col-md-8">
           <div class="card shadow-sm">
-            <div class="card-header text-uppercase font-weight-bold">
+            <div class="card-header text-uppercase font-weight-bold text-info">
               <i class="fas fa-chart-line mr-2"></i> Projected Outcome
             </div>
             <div class="card-header">
@@ -183,35 +189,56 @@
       <div class="row mb-3">
         <div class="col">
           <div class="card shadow-sm">
-            <div class="card-header text-uppercase font-weight-bold">
-              <i class="fas fa-map-marker-alt mr-2"></i>Cases by Region</strong>
+            <div class="card-header text-uppercase font-weight-bold text-info">
+              <i class="fas fa-map-marker-alt mr-2"></i>Confirmed Cases by Region</strong>
+            </div>
+            <div class="card-body">
+              <!DOCTYPE html>
+              <html>
+
+              <head>
+                <title>France Map</title>
+                <!-- map references -->
+                <link rel="stylesheet" href="./map/jquery-jvectormap-2.0.5.css" type="text/css" media="screen" />
+                <script src="./map/jquery-3.5.0.js"></script>
+                <script src="./map/jquery-jvectormap-2.0.5.min.js"></script>
+                <script src="./map/jquery-jvectormap-fr_regions_2016-mill.js"></script>
+              </head>
+
+              <body>
+                <!-- map div and script -->
+                <div id="map" style="width: 600px; height: 400px;"></div>
+                <script src="./map/loadMap.js"></script>
+              </body>
+
+              </html>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
-            <div class="card-header text-uppercase font-weight-bold">
+          <div class="card shadow-sm h-100 ">
+            <div class="card-header text-uppercase font-weight-bold text-info">
               <i class="fas fa-user mr-2"></i>Age and Gender Distribution</strong>
             </div>
           </div>
         </div>
-        </div>
       </div>
+  </div>
 
-    </main>
-</div>
-    </body>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
+  </main>
+  </div>
+</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
 </body>
 
 </html>
